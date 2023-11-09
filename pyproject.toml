@@ -1,0 +1,14 @@
+[project]
+name = "smarties"
+version = "0.1"
+
+[project.optional-dependencies]
+dev = ["black"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+smartify = "smarties:cmdline"
+
